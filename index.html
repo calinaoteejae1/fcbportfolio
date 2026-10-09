@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- favico -->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- og tags -->
+
+    <title>Tee Jae Calinao - Professional Teacher</title>
+    <!-- Tailwind CSS CDN with plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Fredoka & Quicksand for playful, friendly typography -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <style data-purpose="typography-and-base">
+      body {
+        font-family: 'Quicksand', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .brand-font {
+        font-family: 'Fredoka', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FFFDF9] text-[#2D3748] antialiased min-h-screen flex flex-col selection:bg-amber-200">
+    <!-- BEGIN: MainHeader -->
+    <header class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b-2 border-amber-100 shadow-sm" data-purpose="site-navigation-header">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Brand Logo / Identity -->
+        <a class="brand-font flex items-center gap-2 text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors" data-purpose="brand-logo" href="#">
+          <!-- Playful Star Icon matching wireframe -->
+          <svg aria-hidden="true" class="w-8 h-8 text-amber-400 fill-amber-300 stroke-amber-500 stroke-2" viewbox="0 0 24 24">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke-linecap="round" stroke-linejoin="round"></polygon>
+          </svg>
+          <span>Tee Jae Calinao</span>
+        </a>
+        <!-- Navigation Links -->
+        <nav aria-label="Main Navigation" class="flex items-center gap-6 md:gap-8 font-semibold text-base text-slate-600">
+          <a class="hover:text-indigo-600 transition-colors" href="#about">About</a>
+          <a class="hover:text-indigo-600 transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-indigo-600 transition-colors" href="#skills-tools">Skills/Tools</a>
+          <a class="hover:text-indigo-600 transition-colors" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-6 py-12 md:py-16 space-y-20 md:space-y-24">
+      <!-- BEGIN: HeroSection -->
+      <section class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14 pt-4 pb-4" data-purpose="hero-section" id="hero">
+        <!-- Left: Portrait / Avatar Image -->
+        <div class="w-56 h-56 md:w-64 md:h-64 flex-shrink-0 relative group">
+          <div class="absolute -inset-2 bg-gradient-to-r from-amber-300 to-rose-300 rounded-[2.5rem] blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+          <img alt="Portrait of the educator" class="relative w-full h-full object-cover rounded-[2.5rem] border-4 border-white shadow-xl bg-amber-50" data-purpose="hero-avatar" src="./profile.jpg" />
+        </div>
+        <!-- Right: Bio Information -->
+        <div class="flex-1 text-center md:text-left space-y-4" data-purpose="hero-bio-container">
+          <!-- EDIT: YOUR_NAME -->
+          <h1 class="text-4xl md:text-5xl font-bold text-slate-800 tracking-wide">Tee Jae Calinao</h1>
+          <!-- EDIT: YOUR_JOB_TITLE -->
+          <p class="text-xl md:text-2xl font-semibold text-indigo-600">Professional Teacher</p>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
+              I am a professional teacher dedicated to creating engaging, inclusive, and student-centered learning experiences that support academic growth and personal development.
+          </p>
+          <!-- Action Buttons -->
+          <div class="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-4" data-purpose="hero-action-buttons">
+            <a class="px-6 py-3 rounded-2xl bg-indigo-600 text-white font-bold shadow-md hover:bg-indigo-700 hover:shadow-lg transition-all active:scale-95" href="#projects"> View My Projects </a>
+            <a class="px-6 py-3 rounded-2xl bg-slate-800 text-white font-bold shadow-md hover:bg-slate-900 hover:shadow-lg transition-all active:scale-95" href="#contact"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutSection -->
+      <section class="space-y-6 text-center" data-purpose="about-section" id="about">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">About</h2>
+        <!-- Large rounded container matching wireframe -->
+        <div class="w-full bg-white border-2 border-slate-200 rounded-[2.5rem] p-8 md:p-14 shadow-sm text-center flex items-center justify-center min-h-[160px] md:min-h-[200px]" data-purpose="about-container">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl">
+             My expertise includes classroom management, lesson planning, curriculum development, instructional strategies, and student assessment. I focus on adapting teaching methods to accommodate diverse learning needs while encouraging critical thinking, creativity, and active participation. Through effective communication, educational technology, and continuous professional development, I strive to build a positive learning environment that helps students develop essential knowledge, skills, and confidence.
+          </p>
+        </div>
+      </section>
+      <!-- END: AboutSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="space-y-8" data-purpose="projects-section" id="projects">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 text-center">Projects</h2>
+        <!-- 3 Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8" data-purpose="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-purpose="project-card">
+            <div>
+              <img alt="Project Preview" class="w-full h-48 object-cover bg-slate-200 border-b border-slate-100" src="https://cdn.classpoint.io/wp-content/uploads/New-Blog-Featured-Images-6-1.png" />
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-2xl font-bold text-slate-800">Automated Grading</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-slate-600 text-sm md:text-base leading-relaxed">Created an application that can check student output in an automated environment</p>
+              </div>
+            </div>
+            <div class="p-6 pt-3">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block font-bold text-indigo-600 hover:text-indigo-800 hover:underline" href="#"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-purpose="project-card">
+            <div>
+              <img alt="Project Preview" class="w-full h-48 object-cover bg-slate-200 border-b border-slate-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LNAy54so_UDbeMqL1hkPzY3G5NPKBsr39CSnsnWaRPjUMsC4gU7FW6Y&s=10" />
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-2xl font-bold text-slate-800">Curriculum Development Framework</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-slate-600 text-sm md:text-base leading-relaxed">Created the refined workflow and framework for creating a new curriculum and its materials</p>
+              </div>
+            </div>
+            <div class="p-6 pt-3">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block font-bold text-indigo-600 hover:text-indigo-800 hover:underline" href="#"> Project Link </a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-purpose="project-card">
+            <div>
+              <img alt="Project Preview" class="w-full h-48 object-cover bg-slate-200 border-b border-slate-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKO15TO5SZisrt-flwVC-Lq02jOIOW5ne3Ke1X38MYVD526WJWD735Vn-9&s=10" />
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-2xl font-bold text-slate-800">Project Charter for Curriculum Development</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-slate-600 text-sm md:text-base leading-relaxed">Created a new Project Charter Template for Curriculum Development</p>
+              </div>
+            </div>
+            <div class="p-6 pt-3">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block font-bold text-indigo-600 hover:text-indigo-800 hover:underline" href="#"> Project Link </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsAndToolsSection -->
+      <section class="space-y-8" data-purpose="skills-and-tools-section" id="skills-tools">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 text-center">Skills and Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto" data-purpose="skills-tools-grid">
+          <!-- Skills Card -->
+          <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 shadow-sm text-center flex flex-col items-center justify-center min-h-[260px]" data-purpose="skills-card">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">Skills</h3>
+            <!-- EDIT: SKILLS -->
+            <ul class="space-y-2 list-disc list-inside text-left inline-block text-slate-700 font-medium text-base md:text-lg">
+              <li>Curriculum Development</li>
+              <li>Business Analysis</li>
+              <li>Full-Stack Web Development</li>
+            </ul>
+          </div>
+          <!-- Tools Card -->
+          <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 shadow-sm text-center flex flex-col items-center justify-center min-h-[260px]" data-purpose="tools-card">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">Tools</h3>
+            <!-- EDIT: TOOLS -->
+            <ul class="space-y-2 list-disc list-inside text-left inline-block text-slate-700 font-medium text-base md:text-lg">
+              <li>Microsoft Office</li>
+              <li>C++ Programming Language</li>
+              <li>Springboot</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsAndToolsSection -->
+      <!-- BEGIN: ContactSection -->
+      <section class="space-y-6 text-center" data-purpose="contact-section" id="contact">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Contact</h2>
+        <!-- Rounded container card for contact info -->
+        <div class="w-full bg-white border-2 border-slate-200 rounded-[2.5rem] p-10 md:p-14 shadow-sm flex flex-col items-center justify-center space-y-3" data-purpose="contact-card">
+          <!-- EDIT: YOUR_EMAIL -->
+          <p class="text-slate-700 font-medium text-base md:text-lg">Email: sampaul@email.com </p>
+          <!-- EDIT: YOUR_CONTACT_INFORMATION -->
+          <p class="text-slate-700 font-medium text-base md:text-lg">Contact Information: 09261234567 </p>
+          <!-- EDIT: YOUR_SOCIAL_LINK -->
+          <p class="text-slate-700 font-medium text-base md:text-lg">
+            Social Link: <a href="https://www.linkedin.com/in/tee-jae-calinao-4109b119b/">Linkedin</a>
+          </p>
+        </div>
+      </section>
+      <!-- END: ContactSection -->
+    </main>
+    <!-- BEGIN: MainFooter -->
+    <footer class="mt-16 border-t-2 border-slate-200 bg-white py-6 text-center" data-purpose="site-footer">
+      <div class="max-w-6xl mx-auto px-6">
+        <p class="text-slate-500 font-medium text-base"> Copyright 2026 </p>
+      </div>
+    </footer>
+    <!-- END: MainFooter -->
+  </body>
+</html>
